@@ -10,5 +10,5 @@ func main() {
 	http.HandleFunc("/ascii-art", PostAsciiArt)
 
 	log.Println("Server is listening on http://localhost:8181...")
-	http.ListenAndServe("localhost:8181", nil)
+	http.ListenAndServe(":8181", nil)
 }
